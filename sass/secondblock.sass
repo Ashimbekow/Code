@@ -1,0 +1,83 @@
+.SecondBlock
+  width: 100%
+  height: 568px
+  background: url("../images/secondBlock/background.jpg") no-repeat center
+  background-size: cover
+  .SecondBlockInner
+    position: relative
+    height: 100%
+    display: flex
+    align-items: center
+    flex-direction: column-reverse
+    background: url("../images/secondBlock/couple.png") no-repeat
+    background-position: 593px 137px
+    @media (max-width: 1300px)
+      background: none
+    .dots
+      width: 136px
+      display: flex
+      justify-content: space-between
+      margin-bottom: 28px
+      .dot
+        width: 12px
+        height: 12px
+        border-radius: 50%
+        background: url("../images/secondBlock/dot_unuse.svg") no-repeat center
+        background-size: cover
+      .active
+        background: url("../images/secondBlock/dot.svg") no-repeat center
+        background-size: cover
+    .SBText
+      position: absolute
+      top: 227px
+      left: 167px
+      @media (max-width: 480px)
+        scale: 0.8
+        left: 115px
+      @media (max-width: 415px)
+        scale: 0.7
+        left: 70px
+    h3
+      font-family: 'Inter'
+      font-style: normal
+      font-weight: 700
+      font-size: 28px
+      line-height: 150%
+      color: #FFFFFF
+    p
+      margin-top: 20px
+      font-family: 'Inter'
+      font-style: normal
+      font-weight: 400
+      font-size: 14px
+      line-height: 150%
+      color: #FFFFFF
+    button
+      width: 198px
+      height: 40px
+      background: transparent
+      border: 1px solid #FFFFFF
+      font-family: 'Inter'
+      font-style: normal
+      font-weight: 500
+      font-size: 14px
+      line-height: 150%
+      color: #FFFFFF
+      margin-top: 55px
+      cursor: pointer
+    .arrow
+      width: 40px
+      height: 40px
+      border: 1px solid #FFFFFF
+      display: flex
+      justify-content: center
+      align-items: center
+      cursor: pointer
+    .arrow:nth-child(1)
+      position: absolute
+      left: 32px
+      top: 274px
+    .arrow
+      position: absolute
+      right: 32px
+      top: 274px

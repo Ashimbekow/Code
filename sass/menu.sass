@@ -1,0 +1,74 @@
+header
+  padding-top: 10px
+  padding-bottom: 10px
+.menu
+  display: flex
+  justify-content: space-between
+  h2
+    font-family: 'Inter'
+    font-style: normal
+    font-weight: 700
+    font-size: 28px
+    line-height: 150%
+    color: #0F2A59
+    @media (max-width: 415px)
+      width: 100%
+      text-align: center
+  .menuBar
+    width: 881px
+    display: flex
+    justify-content: space-between
+    @media (max-width: 1020px)
+      margin-left: 15px
+    @media (max-width: 560px)
+      justify-content: center
+    @media (max-width: 415px)
+      display: none
+    .iconMenu
+      display: flex
+      align-items: center
+      @media (max-width: 560px)
+        display: none
+      img:nth-child(1)
+        margin-left: 7px
+      img:nth-child(2)
+        margin-left: 16px
+
+    ul
+      display: flex
+      justify-content: space-between
+      align-items: center
+      width: 340px
+      height: 100%
+      hr
+        height: 1.3px
+        width: 20px
+        rotate: 90deg
+        background-color: #E8E8E8
+        opacity: 0.5
+        border: none
+
+      li
+        list-style: none
+        a
+          text-decoration: none
+          font-family: 'Inter'
+          font-style: normal
+          font-weight: 400
+          font-size: 14px
+          line-height: 17px
+          color: #181818
+          display: flex
+          align-items: center
+          &::after
+            content: ''
+            display: block
+            height: 7px
+            width: 10px
+            margin-left: 7px
+            background: url("../images/menu/arrov.svg") no-repeat center
+            background-size: contain
+
+
+
+
